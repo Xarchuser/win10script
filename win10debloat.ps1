@@ -133,12 +133,12 @@ $winterminal.height              = 30
 $winterminal.location            = New-Object System.Drawing.Point(3,32)
 $winterminal.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
-$vscode                          = New-Object system.Windows.Forms.Button
-$vscode.text                     = "Visual Studio Code"
-$vscode.width                    = 211
-$vscode.height                   = 30
-$vscode.location                 = New-Object System.Drawing.Point(4,797)
-$vscode.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+#$vscode                          = New-Object system.Windows.Forms.Button
+#$vscode.text                     = "Visual Studio Code"
+#$vscode.width                    = 211
+#$vscode.height                   = 30
+#$vscode.location                 = New-Object System.Drawing.Point(4,797)
+#$vscode.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $Label2                          = New-Object system.Windows.Forms.Label
 $Label2.text                     = "Utilities"
@@ -373,12 +373,12 @@ $sumatrapdf.height               = 30
 $sumatrapdf.location             = New-Object System.Drawing.Point(4,900)
 $sumatrapdf.Font                 = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
-$vscodium                        = New-Object system.Windows.Forms.Button
-$vscodium.text                   = "VS Codium"
-$vscodium.width                  = 211
-$vscodium.height                 = 30
-$vscodium.location               = New-Object System.Drawing.Point(4,763)
-$vscodium.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+#$vscodium                        = New-Object system.Windows.Forms.Button
+#$vscodium.text                   = "VS Codium"
+#$vscodium.width                  = 211
+#$vscodium.height                 = 30
+#$vscodium.location               = New-Object System.Drawing.Point(4,763)
+#$vscodium.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $imageglass                      = New-Object system.Windows.Forms.Button
 $imageglass.text                 = "ImageGlass (Image Viewer)"
