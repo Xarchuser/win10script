@@ -56,12 +56,12 @@ $Panel1.height                   = 939
 $Panel1.width                    = 219
 $Panel1.location                 = New-Object System.Drawing.Point(6,54)
 
-$brave                           = New-Object system.Windows.Forms.Button
-$brave.text                      = "Brave Browser"
-$brave.width                     = 212
-$brave.height                    = 30
-$brave.location                  = New-Object System.Drawing.Point(4,426)
-$brave.Font                      = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$librewolf                           = New-Object system.Windows.Forms.Button
+$librewolf.text                      = "LibreWolf"
+$librewolf.width                     = 212
+$librewolf.height                    = 30
+$librewolf.location                  = New-Object System.Drawing.Point(4,426)
+$librewolf.Font                      = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $firefox                         = New-Object system.Windows.Forms.Button
 $firefox.text                    = "Firefox"
@@ -625,12 +625,12 @@ $Panel2.controls.AddRange(@($essentialtweaks,$backgroundapps,$cortana,$actioncen
 $Panel4.controls.AddRange(@($defaultwindowsupdate,$securitywindowsupdate,$Label16,$Label17,$Label18,$Label19))
 $Panel3.controls.AddRange(@($yourphonefix,$Label6,$windowsupdatefix,$ncpa,$oldcontrolpanel,$oldsoundpanel,$Button1))
 
-$brave.Add_Click({
-    Write-Host "Installing Brave Browser"
-    $ResultText.text = "`r`n" +"`r`n" + "Installing Brave... Please Wait" 
-    winget install -e BraveSoftware.BraveBrowser | Out-Host
-    if($?) { Write-Host "Installed Brave Browser" }
-    $ResultText.text = "`r`n" + "Finished Installing Brave" + "`r`n" + "`r`n" + "Ready for Next Task"
+$librewolf.Add_Click({
+    Write-Host "Installing LibreWolf"
+    $ResultText.text = "`r`n" +"`r`n" + "Installing LibreWolf... Please Wait" 
+    winget install -e LibreWolf.LibreWolf | Out-Host
+    if($?) { Write-Host "Installed LibreWolf" }
+    $ResultText.text = "`r`n" + "Finished LibreWolf" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
 
 $firefox.Add_Click({
@@ -642,11 +642,11 @@ $firefox.Add_Click({
 })
 
 $gchrome.Add_Click({
-    Write-Host "Installing Chromium"
-    $ResultText.text = "`r`n" +"`r`n" + "Installing Chromium... Please Wait" 
+    Write-Host "Installing Ungoogled Chromium"
+    $ResultText.text = "`r`n" +"`r`n" + "Installing Ungoogled Chromium... Please Wait" 
     winget install -e eloston.ungoogled-chromium | Out-Host
-    if($?) { Write-Host "Installed Chromium" }
-    $ResultText.text = "`r`n" + "Finished Installing Google Chrome" + "`r`n" + "`r`n" + "Ready for Next Task"
+    if($?) { Write-Host "Installed Ungoogled Chromium" }
+    $ResultText.text = "`r`n" + "Finished Installing Ungoogled Chromium" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
 
 $autohotkey.Add_Click({
