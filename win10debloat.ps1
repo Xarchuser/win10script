@@ -99,7 +99,7 @@ $notepad.location                = New-Object System.Drawing.Point(3,831)
 $notepad.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $gchrome                         = New-Object system.Windows.Forms.Button
-$gchrome.text                    = "Google Chrome"
+$gchrome.text                    = "Chromium"
 $gchrome.width                   = 212
 $gchrome.height                  = 30
 $gchrome.location                = New-Object System.Drawing.Point(3,494)
