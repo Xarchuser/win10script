@@ -18,10 +18,10 @@ $services = @(
     "WMPNetworkSvc"                                # Windows Media Player Network Sharing Service
     #"wscsvc"                                       # Windows Security Center Service
     "WSearch"                                      # Windows Search
-    "XblAuthManager"                               # Xbox Live Auth Manager
-    "XblGameSave"                                  # Xbox Live Game Save Service
-    "XboxNetApiSvc"                                # Xbox Live Networking Service
-    "XboxGipSvc"                                   #Disables Xbox Accessory Management Service
+    #"XblAuthManager"                               # Xbox Live Auth Manager
+    #"XblGameSave"                                  # Xbox Live Game Save Service
+    #"XboxNetApiSvc"                                # Xbox Live Networking Service
+    #"XboxGipSvc"                                   #Disables Xbox Accessory Management Service
     "ndu"                                          # Windows Network Data Usage Monitor
     "WerSvc"                                       #disables windows error reporting
     "Spooler"                                      #Disables your printer
@@ -78,14 +78,14 @@ $services = @(
     "HPSysInfoCap"
     "HpTouchpointAnalyticsService"
     #hyper-v services
-     "HvHost"                          
-    "vmickvpexchange"
-    "vmicguestinterface"
-    "vmicshutdown"
-    "vmicheartbeat"
-    "vmicvmsession"
-    "vmicrdv"
-    "vmictimesync" 
+    #"HvHost"                          
+    #"vmickvpexchange"
+    #"vmicguestinterface"
+    #"vmicshutdown"
+    #"vmicheartbeat"
+    #"vmicvmsession"
+    #"vmicrdv"
+    #"vmictimesync" 
     # Services which cannot be disabled
     #"WdNisSvc"
 )
