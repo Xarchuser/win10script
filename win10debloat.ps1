@@ -56,12 +56,12 @@ $Panel1.height                   = 939
 $Panel1.width                    = 219
 $Panel1.location                 = New-Object System.Drawing.Point(6,54)
 
-$librewolf                           = New-Object system.Windows.Forms.Button
-$librewolf.text                      = "LibreWolf"
-$librewolf.width                     = 212
-$librewolf.height                    = 30
-$librewolf.location                  = New-Object System.Drawing.Point(4,426)
-$librewolf.Font                      = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$librewolf                      = New-Object system.Windows.Forms.Button
+$librewolf.text                 = "LibreWolf"
+$librewolf.width                = 212
+$librewolf.height               = 30
+$librewolf.location             = New-Object System.Drawing.Point(4,426)
+$librewolf.Font                 = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $firefox                         = New-Object system.Windows.Forms.Button
 $firefox.text                    = "Firefox"
@@ -95,7 +95,7 @@ $notepad                         = New-Object system.Windows.Forms.Button
 $notepad.text                    = "Notepad++"
 $notepad.width                   = 212
 $notepad.height                  = 30
-$notepad.location                = New-Object System.Drawing.Point(3,831)
+$notepad.location                = New-Object System.Drawing.Point(4,763)
 $notepad.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $gchrome                         = New-Object system.Windows.Forms.Button
