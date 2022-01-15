@@ -88,7 +88,7 @@ $foxit 			         = New-Object system.Windows.Forms.Button
 $foxit.text                      = "Foxit Reader"
 $foxit.width                     = 212
 $foxit.height                    = 30
-$foxit.location                  = New-Object System.Drawing.Point(3,865)
+$foxit.location                  = New-Object System.Drawing.Point(4,797) #New-Object System.Drawing.Point(3,865)
 $foxit.Font                      = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $notepad                         = New-Object system.Windows.Forms.Button
