@@ -370,7 +370,7 @@ $sumatrapdf                      = New-Object system.Windows.Forms.Button
 $sumatrapdf.text                 = "Sumatra PDF"
 $sumatrapdf.width                = 212
 $sumatrapdf.height               = 30
-$sumatrapdf.location             = New-Object System.Drawing.Point(4,900)
+$sumatrapdf.location             = New-Object System.Drawing.Point(3,831) #New-Object System.Drawing.Point(4,900)
 $sumatrapdf.Font                 = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 #$vscodium                        = New-Object system.Windows.Forms.Button
