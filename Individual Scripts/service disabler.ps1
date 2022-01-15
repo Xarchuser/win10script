@@ -22,7 +22,7 @@ $services = @(
     #"XblGameSave"                                  # Xbox Live Game Save Service
     #"XboxNetApiSvc"                                # Xbox Live Networking Service
     #"XboxGipSvc"                                   #Disables Xbox Accessory Management Service
-    "ndu"                                          # Windows Network Data Usage Monitor
+    #"ndu"                                          # Windows Network Data Usage Monitor
     "WerSvc"                                       #disables windows error reporting
     "Spooler"                                      #Disables your printer
     "Fax"                                          #Disables fax
@@ -48,7 +48,7 @@ $services = @(
     #"BFE"                                         #Disables Base Filtering Engine (BFE) (is a service that manages firewall and Internet Protocol security)
     #"BrokerInfrastructure"                         #Disables Windows infrastructure service that controls which background tasks can run on the system.
     "SCardSvr"                                      #Disables Windows smart card
-    "EntAppSvc"                                     #Disables enterprise application management.
+    #"EntAppSvc"                                     #Disables enterprise application management.
     "BthAvctpSvc"                                   #Disables AVCTP service (if you use  Bluetooth Audio Device or Wireless Headphones. then don't disable this)
     #"FrameServer"                                   #Disables Windows Camera Frame Server(this allows multiple clients to access video frames from camera devices.)
     "Browser"                                       #Disables computer browser
