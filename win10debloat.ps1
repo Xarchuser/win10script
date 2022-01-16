@@ -834,12 +834,12 @@ $essentialtweaks.Add_Click({
     Enable-ComputerRestore -Drive "C:\"
     Checkpoint-Computer -Description "RestorePoint1" -RestorePointType "MODIFY_SETTINGS"
 
-    Write-Host "Running O&O Shutup with Recommended Settings"
-    $ResultText.text += "`r`n" +"Running O&O Shutup with Recommended Settings"
-    Import-Module BitsTransfer
-    Start-BitsTransfer -Source "https://raw.githubusercontent.com/ChrisTitusTech/win10script/master/ooshutup10.cfg" -Destination ooshutup10.cfg
-    Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe
-    ./OOSU10.exe ooshutup10.cfg /quiet
+    #Write-Host "Running O&O Shutup with Recommended Settings"
+    #$ResultText.text += "`r`n" +"Running O&O Shutup with Recommended Settings"
+    #Import-Module BitsTransfer
+    #Start-BitsTransfer -Source "https://raw.githubusercontent.com/ChrisTitusTech/win10script/master/ooshutup10.cfg" -Destination ooshutup10.cfg
+    #Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe
+    #./OOSU10.exe ooshutup10.cfg /quiet
 
     Write-Host "Disabling Telemetry..."
     $ResultText.text += "`r`n" +"Disabling Telemetry..."
@@ -1036,11 +1036,11 @@ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies
     "WMPNetworkSvc"                                # Windows Media Player Network Sharing Service
     #"wscsvc"                                       # Windows Security Center Service
     "WSearch"                                      # Windows Search
-    "XblAuthManager"                               # Xbox Live Auth Manager
-    "XblGameSave"                                  # Xbox Live Game Save Service
-    "XboxNetApiSvc"                                # Xbox Live Networking Service
-    "XboxGipSvc"                                   #Disables Xbox Accessory Management Service
-    "ndu"                                          # Windows Network Data Usage Monitor
+    #"XblAuthManager"                               # Xbox Live Auth Manager
+    #"XblGameSave"                                  # Xbox Live Game Save Service
+    #"XboxNetApiSvc"                                # Xbox Live Networking Service
+    #"XboxGipSvc"                                   #Disables Xbox Accessory Management Service
+    #"ndu"                                          # Windows Network Data Usage Monitor
     "WerSvc"                                       #disables windows error reporting
     #"Spooler"                                      #Disables your printer
     "Fax"                                          #Disables fax
@@ -1096,14 +1096,14 @@ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies
     "HPSysInfoCap"
     "HpTouchpointAnalyticsService"
     #hyper-v services
-     "HvHost"                          
-    "vmickvpexchange"
-    "vmicguestinterface"
-    "vmicshutdown"
-    "vmicheartbeat"
-    "vmicvmsession"
-    "vmicrdv"
-    "vmictimesync" 
+     #"HvHost"                          
+    #"vmickvpexchange"
+    #"vmicguestinterface"
+    #"vmicshutdown"
+    #"vmicheartbeat"
+    #"vmicvmsession"
+    #"vmicrdv"
+    #"vmictimesync" 
     # Services which cannot be disabled
     #"WdNisSvc"
 )
@@ -1119,11 +1119,11 @@ foreach ($service in $services) {
     $ResultText.text = "`r`n" + "Essential Tweaks Done" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
 
-$dualboottime.Add_Click({
-Write-Host "Setting BIOS time to UTC..."
-    Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\TimeZoneInformation" -Name "RealTimeIsUniversal" -Type DWord -Value 1
-    $ResultText.text = "`r`n" + "Time set to UTC for consistent time in Dual Boot Systems" + "`r`n" + "`r`n" + "Ready for Next Task"
-})
+#$dualboottime.Add_Click({
+#Write-Host "Setting BIOS time to UTC..."
+#    Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\TimeZoneInformation" -Name "RealTimeIsUniversal" -Type DWord -Value 1
+#    $ResultText.text = "`r`n" + "Time set to UTC for consistent time in Dual Boot Systems" + "`r`n" + "`r`n" + "Ready for Next Task"
+#})
 
 $essentialundo.Add_Click({
     Write-Host "Creating Restore Point incase something bad happens"
