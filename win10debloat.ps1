@@ -119,12 +119,12 @@ $vlc.height                      = 30
 $vlc.location                    = New-Object System.Drawing.Point(3,663)
 $vlc.Font                        = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
-$powertoys                       = New-Object system.Windows.Forms.Button
-$powertoys.text                  = "PowerToys"
-$powertoys.width                 = 211
-$powertoys.height                = 30
-$powertoys.location              = New-Object System.Drawing.Point(4,67)
-$powertoys.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$revo                       = New-Object system.Windows.Forms.Button
+$revo.text                  = "Revo Uninstaller"
+$revo.width                 = 211
+$revo.height                = 30
+$revo.location              = New-Object System.Drawing.Point(4,67)
+$revo.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $winterminal                     = New-Object system.Windows.Forms.Button
 $winterminal.text                = "Windows Terminal"
@@ -620,7 +620,7 @@ $Button1.location                = New-Object System.Drawing.Point(4,197)
 $Button1.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $Form.controls.AddRange(@($Panel1,$Panel2,$Label3,$Label15,$Panel4,$PictureBox1,$Label1,$Label4,$Panel3,$ResultText,$Label10,$Label11,$urlfixwinstartup,$urlremovevirus,$urlcreateiso))
-$Panel1.controls.AddRange(@($librewolf,$firefox,$7zip,$sharex,$foxit,$notepad,$gchrome,$mpc,$vlc,$powertoys,$winterminal,$vscode,$Label2,$everythingsearch,$sumatrapdf,$vscodium,$imageglass,$gimp,$Label7,$Label8,$Label9,$advancedipscanner,$putty,$etcher,$translucenttb,$githubdesktop,$discord,$autohotkey))
+$Panel1.controls.AddRange(@($librewolf,$firefox,$7zip,$sharex,$foxit,$notepad,$gchrome,$mpc,$vlc,$revo,$winterminal,$vscode,$Label2,$everythingsearch,$sumatrapdf,$vscodium,$imageglass,$gimp,$Label7,$Label8,$Label9,$advancedipscanner,$putty,$etcher,$translucenttb,$githubdesktop,$discord,$autohotkey))
 $Panel2.controls.AddRange(@($essentialtweaks,$backgroundapps,$cortana,$actioncenter,$darkmode,$performancefx,$onedrive,$lightmode,$essentialundo,$EActionCenter,$ECortana,$RBackgroundApps,$HTrayIcons,$EClipboardHistory,$ELocation,$InstallOneDrive,$removebloat,$reinstallbloat,$WarningLabel,$Label5,$appearancefx,$STrayIcons,$EHibernation,$dualboottime))
 $Panel4.controls.AddRange(@($defaultwindowsupdate,$securitywindowsupdate,$Label16,$Label17,$Label18,$Label19))
 $Panel3.controls.AddRange(@($yourphonefix,$Label6,$windowsupdatefix,$ncpa,$oldcontrolpanel,$oldsoundpanel,$Button1))
@@ -747,12 +747,12 @@ $winterminal.Add_Click({
     $ResultText.text = "`r`n" + "Finished Installing New Windows Terminal" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
 
-$powertoys.Add_Click({
-    Write-Host "Installing Microsoft PowerToys"
-    $ResultText.text = "`r`n" +"`r`n" + "Installing Microsoft PowerToys... Please Wait" 
-    winget install -e Microsoft.PowerToys | Out-Host
-    if($?) { Write-Host "Installed Microsoft PowerToys" }
-    $ResultText.text = "`r`n" + "Finished Installing Microsoft PowerToys" + "`r`n" + "`r`n" + "Ready for Next Task"
+$revo.Add_Click({
+    Write-Host "Installing Revo Uninstaller"
+    $ResultText.text = "`r`n" +"`r`n" + "Installing Revo Uninstaller... Please Wait" 
+    winget install -e RevoUninstaller.RevoUninstaller | Out-Host
+    if($?) { Write-Host "Installed Revo Uninstaller" }
+    $ResultText.text = "`r`n" + "Finished Installing Revo Uninstallers" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
 
 $everythingsearch.Add_Click({
